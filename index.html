@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generate App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="inputs">
+        <form action="#" class="form">
+            <div class="form-grp">
+                <label for="url">Enter Your URL</label>
+                <input type="url" id="url" placeholder="Enter Your URL" required>
+            </div>
+
+            <div class="form-grp">
+                <label for="size">Select Your Size</label>
+                <select id="size">
+                <option value="100">100X100</option>
+                <option value="200">200X200</option>
+                <option value="300">300X300</option>
+                <option value="400">400X400</option>
+                <option value="500">500X500</option>
+                <!-- <option value="500">500X500</option> -->
+                </select>
+            </div>
+
+            <div class="form-grp-color">
+                <label for="colorBlack">Color Black</label>
+                <input type="color" id="colorBlack" value="#000000">
+            </div>
+
+            <div class="form-grp-color">
+                <label for="colorWhite">Color White</label>
+                <input type="color" id="colorWhite" value="#ffffff">
+            </div>
+            <button type="submit">Generate Your QR Code</button>
+            <a href="" id="btn" download="generateCode">Save QR Code</a>
+        </form>
+    </div>
+    <div class="qrcode">
+        <div id="generateCode">
+        <img src="/QR.png" alt="">
+        </div>
+        <div id="load">
+            <div id="icon">
+            </div>
+            <p>Please Wait</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
